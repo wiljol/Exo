@@ -1,0 +1,12 @@
+Algorithme comparaison;
+Var A,B:entiers;
+
+Debut
+Afficher"Veuillez entrer un reel";
+Saisir A,B;
+	Si A superieur a B alors:
+		afficher A ,"est plus grand";
+	Sion B superieur a A alors:
+		afficher B ,"est plus grand";
+	Finsi
+Fin
