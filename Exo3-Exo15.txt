@@ -1,0 +1,191 @@
+Exo3
+Algorithme 
+Algorithme  message ;
+
+VAR 
+    A , B  : entiers ;
+Début 
+     Afficher " veuillez entrer vos lettres entre A et B ";
+Saisir   A ,B 
+Si A<B alors : 
+      Afficher " B est le plus grand ";
+Sinon si A>B alors :
+      Afficher " A est le grand ";
+
+Sinon si A=B alors :
+       Afficher " A , B sont égales ";
+Fin si 
+
+Fin 
+
+Exo4
+ Algorithme  nombre-positif;
+   Var
+       V,X,Y: Réels 
+Début
+Afficher " entrer deux nombres ";
+Saisir  X,Y ;
+V <- X - Y
+Si V< 0
+Sinon alors 
+V <- V   
+Fin si 
+Fin 
+
+Exo5 
+Algorithme   Action ; 
+Var 
+Couleur : chaîne de caractères 
+Début 
+  Afficher " veuillez entrer une couleur ";
+  Afficher " les couleurs sont"; 
+  Afficher " - Rouge ";
+  Afficher " -Orange ";
+  Afficher " -Vert "; 
+Saisir   Couleurs; 
+Suivant les couleurs faire : 
+"Rouge " : afficher " s'arrêter "
+" Orange " : afficher " Ralenti " 
+" Vert" : afficher " passer "; 
+Sinon alors 
+Afficher " incorrecte "
+Fin si 
+Fin .⁵
+ Exo 6
+Algorithme  Message ;
+Var
+  x: entiers 
+Début
+Afficher " veuillez entrer vos notes entre 0 à 20" 
+Saisir x
+Si x >= 17 et x < = 20  alors : 
+Afficher " excellent ";
+Sinon si x =16 alors :
+Afficher " très bien " ;
+Sinon si x >= 14 et x >= 15 alors :
+Afficher " bien" ;
+Sinon si x >= 12 et x < = 13 alors :
+Afficher " assez bien " ;
+Sinon si x >= 10 et x < = 11 alors :
+Afficher " passable" ;
+ Sinon  si x >= et x < = 9 alors : 
+Afficher " insuffisant " ;
+Sinon si x >= 6 et x < =7 alors : 
+Afficher " faible " ; 
+Sinon si x < 6 alors : 
+Afficher " médiocre " ;
+Sinon 
+Afficher " erreurs " 
+Fin si 
+ 
+Exo 7 
+Algorithme question-sans-fin ;
+Var 
+  Réponse : " chaîne de caractères "; 
+Début 
+Répéter 
+Afficher " aimez vous l'informatique ?" ; 
+Saisir  réponse 
+Jusqu'à ce que réponse = " oui" ou "non " ;
+Fin 
+Exo 8 
+Algorithme.  question-sans-fin;
+Var 
+Réponse : "chaîne de caractères " 
+Début 
+Réponse "    " ; 
+Tant que réponse <> " oui " ou " non" faire: 
+Afficher " aimez vous l'informatique ?" ;
+Saisir  réponse ;
+  Fin tant que 
+Fin 
+
+Exo 9 
+Algorithme remplir-tableau 
+Tab(1:8): tableau de type entiers ;
+I, valeur : entiers 
+Début
+Pour i -> 1 à 8 à pas de 1 faire : 
+Afficher " veuillez saisir le contenu de la case " i ; 
+Saisir  valeur
+Tab [i] <- valeur, 
+ Fin pour
+  Fin
+Exo 10 
+Algorithme  parcours ;
+Var 
+  Note (1:10): tableau de type réel ; 
+I: entiers ; 
+Début 
+Pour i -> 1 à 10 à  pas de 1 faire : 
+Afficher " le contenu de la case " , i , "est", 
+Fin pour 
+Fin 
+Exo 11
+Algorithme   Somme ;
+Var 
+Tab (1:10): tableau de type réels ;
+I, Somme : réels 
+Début 
+Somme <- 0
+Pour i -> 1 à 10 à pas de 1 faire : 
+Somme <- somme + tab[i]
+Fin pour 
+Fin 
+Exo 12 
+Algorithme  tableau;
+Var 
+Tab(1:10): tableau de type réels 
+Min : réels , i : entier 
+Début 
+I <- 1 
+Min <- tab[i]
+Pour i -> 1 à  10 à pas de 1 faire : 
+Si tab[i] < min alors : 
+Min <- tab[i] 
+Afficher " le minimum est " i "minimum"
+ 
+Fin si 
+Fin 
+
+Exo 13 
+Algorithme  chercher ;
+Var 
+Tab(1:10): tableau de type chaîne de caractères 
+Trouver : booléen ;
+Nom: chaine de caractères ;
+Début 
+Afficher " veuillez entrer un nom " ;
+Saisir  nom 
+Trouver <- 0 
+Pour i -> 1 à 10 à  pas de 1 faire :
+Si tab[i] = nom alors : 
+Trouver <- 1 
+Fin si 
+Fin pour 
+Si trouver = 1 alors 
+Afficher  " votre nom à été bien trouver "
+Sinon 
+Afficher " nom introuvable " 
+Fin si 
+Fin 
+Exo 15
+Algorithme  triller ;
+Var 
+Tab(1:10): tableau de type entiers 
+Min, i, permute, j, position : entiers 
+Début 
+Pour i -> 1 à 10 à  pas de 1 faire : 
+Min <- tab [i] ,
+Position <- i
+Pour j -> 1à 10 à  de 1 faire : 
+Si tab[j] < min alors :
+Min <- tab [j]; 
+Position <- j ; 
+Fin si 
+Fin pour 
+Permute  <- tab [i];
+Tab[i] <- min 
+Position <- permute; 
+Fin pour 
+Fin .
