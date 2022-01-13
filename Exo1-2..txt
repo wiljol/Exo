@@ -1,0 +1,25 @@
+Algoritme afficher_age;
+Var age,annee_naissance:entiers;
+const ANNEE_ACTU=2021
+
+Debut
+	Ecrire "Veuillez entrer votre annee de naissance";
+	Lire annee_annaissance;
+	age recoit ANNEE_ACTU - annee_naissance;
+	Ecrire "Vous avez" ,age ,"ans"
+Fin
+
+Exo2
+
+Algorithme  afficher-age;
+  Var 
+     Age, annne-naissance : entiers ;
+ CONST 
+ ANNNE-ACTU =2021;
+Début 
+Afficher " veuillez entrer notre année de naissance ";
+Saisir    Anne-naissance;
+
+Age <- ANNNE-ACTU  -  année-naissance ;
+Afficher " Vous avez " age " ans ";
+Fin 
